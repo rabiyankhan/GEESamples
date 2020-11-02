@@ -1,0 +1,16 @@
+Traditional databases holds large amounts of data. 
+In traditional databases, data is processed on a single CPU,
+and computations are performed one after another. 
+As a result reading and writing data from a single disk is a slow process. 
+It is not resonable to read, write and process large amounts of data 
+like terra bytes of data from a single disk with limited resources and time [7]. 
+Apache Hadoop is a open source framework that can handle large data storage 
+and parallel processing of computations. Hadoop handles large data storage by 
+dividing the data into small data blocks and stores them on different nodes, 
+and process the data in parallel using a concept called MapReduce [3]. 
+Map function collects the data from each data block location, 
+and breaks the data into key/value pairs. 
+They are transferred to reducers for further processing of whole data [11]. 
+Hive is a data warehousing software, which works on top of Hadoop file system. 
+Hive has a SQL interface to execute Hive QL queries which are 
+converted to map reduce jobs [12]. Figure 2.1 shows relation between HDFS, MapReduce and Hive.
